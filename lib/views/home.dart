@@ -1,7 +1,7 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_weight_tracker/graph.dart';
-import 'package:flutter_weight_tracker/history.dart';
+import 'package:flutter_weight_tracker/views/graph.dart';
+import 'package:flutter_weight_tracker/views/history.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

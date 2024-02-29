@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+part 'record.freezed.dart';
+part 'record.g.dart';
 
-part 'user.freezed.dart';
-part 'user.g.dart';
 @freezed
 class Record with _$Record {
   const factory Record({
@@ -11,6 +11,5 @@ class Record with _$Record {
     String? photoUrl,
   }) = _Record;
 
-  factory Record.fromJson(Map<String, Object?> json)
-      => _$RecordFromJson(json);
+  factory Record.fromJson(Map<String, Object> json) => _$RecordFromJson(json);
 }

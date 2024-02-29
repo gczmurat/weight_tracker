@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_weight_tracker/home.dart';
+import 'package:flutter_weight_tracker/views/home.dart';
 import 'package:get/get.dart';
 
 void main() => runApp(const MyApp());

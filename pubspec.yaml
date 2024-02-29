@@ -30,7 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  freezed_annotation:
+  freezed_annotation: ^2.4.1
+  json_annotation:
     
 
 
@@ -47,8 +48,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   json_serializable:
-  build_runner:
   freezed:
+  build_runner:
+  
   
 
     
