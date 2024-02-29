@@ -1,7 +1,9 @@
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_weight_tracker/views/add_record.dart';
 import 'package:flutter_weight_tracker/views/graph.dart';
 import 'package:flutter_weight_tracker/views/history.dart';
+import 'package:get/get.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -12,17 +14,17 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int _currentTab = 0;
-  Widget _currentScreen = GraphScreen();
+  Widget _currentScreen =  GraphScreen();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: _currentScreen,
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: IconButton(
-          onPressed: () {},
+          onPressed: () => Get.to(() =>const AddRecordView()),
           icon: const Icon(
             Icons.add,
-            color: Colors.black,
+            color: Colors.purple,
             size: 35,
           )),
       bottomNavigationBar: AnimatedBottomNavigationBar(
@@ -36,7 +38,7 @@ class _HomeState extends State<Home> {
         onTap: (int) {
           setState(() {
             _currentTab = int;
-            _currentScreen = (int == 0) ? GraphScreen() : HistoryScreen();
+            _currentScreen = (int == 0) ?  GraphScreen() : HistoryScreen();
           });
         },
       ),
